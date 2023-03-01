@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
+    minimum-scale=1.0">
+    <title>Pokemones</title>
+</head>
+<body>
+    <header>
+		
+            <span class="img-container">
+                <img src="./images/International_Pokémon_logo.svg.webp" width="200px" height="auto">
+            </span>
+        
+		<nav>		
+            <ul class="nav-links">
+                <li><a target="_blank" href="https://www.pokemon.com/el/pokedex">Pokedex</a></li>
+                <li><a target="_blank" href="https://www.pokemon.com/el/noticias-pokemon">Noticias</a></li>
+                <li><a target="_blank" href="https://www.pokemon.com/el/episodios-pokemon">Tv Pokemon</a></li>
+            </ul>            
+        </nav>	
+    </header>
+
+    <h1 class="title">Cartas de jugadores</h1>
+
+    <div class="container">
+        <div class="card">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png">
+            <h4>Bulbasaur</h4>
+            <p>Este Pokémon nace con una semilla en el lomo, que brota con el paso del tiempo.</p>
+            <a href="https://www.pokemon.com/el/pokedex/bulbasaur" target="_blank">Mas...</a>
+        </div>
+
+        <div class="card">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png">
+            <h4>Ivysaur</h4>
+            <p>Cuando le crece bastante el bulbo del lomo, pierde la capacidad de erguirse sobre las patas traseras.</p>
+            <a href="https://www.pokemon.com/el/pokedex/ivysaur" target="_blank">Mas...</a>
+        </div>
+
+        <div class="card">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png">
+            <h4>Venusaur </h4>
+            <p>La planta florece cuando absorbe energía solar, lo cual le obliga a buscar siempre la luz del sol.</p>
+            <a href="https://www.pokemon.com/el/pokedex/venusaur" target="_blank">Mas...</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="card">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png">
+            <h4>Charmander</h4>
+            <p>Prefiere las cosas calientes. Dicen que cuando llueve le sale vapor de la punta de la cola.</p>
+            <a href="https://www.pokemon.com/el/pokedex/charmander" target="_blank">Mas...</a>
+        </div>
+
+        <div class="card">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png">
+            <h4>Charmeleon</h4>
+            <p>Este Pokémon de naturaleza agresiva ataca en combate con su cola llameante y hace trizas al rival con sus afiladas garras.</p>
+            <a href="https://www.pokemon.com/el/pokedex/charmeleon" target="_blank">Mas...</a>
+        </div>
+
+        <div class="card">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png">
+            <h4>Charizard</h4>
+            <p>Escupe un fuego tan caliente que funde las rocas. Causa incendios forestales sin querer.</p>
+            <a href="https://www.pokemon.com/el/pokedex/charizard" target="_blank">Mas...</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contact_form">
+
+            <div class="formulario">      
+              <h1>Formulario de contacto</h1>
+                <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
+        
+        
+                  <form action="submeter-formulario.php" method="post">       
+        
+                    
+                        <p>
+                          <label for="nombre" class="colocar_nombre">Nombre
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                        </p>
+                      
+                        <p>
+                          <label for="email" class="colocar_email">Email
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                        </p>
+                    
+                        <p>
+                          <label for="telefone" class="colocar_telefono">Teléfono
+                          </label>
+                            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                        </p>    
+                      
+                        <p>
+                          <label for="website" class="colocar_website">Sitio web
+                          </label>
+                            <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+                        </p>    
+                      
+                        <p>
+                          <label for="asunto" class="colocar_asunto">Asunto
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                        </p>    
+                      
+                        <p>
+                          <label for="mensaje" class="colocar_mensaje">Mensaje
+                            <span class="obligatorio">*</span>
+                          </label>                     
+                                            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                        </p>                    
+                      
+                        <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+        
+                        <p class="aviso">
+                          <span class="obligatorio"> * </span>los campos son obligatorios.
+                        </p>          
+                    
+                  </form>
+                  
+            </div>  
+          </div>
+        <center><p>Copyright &copy; Alfonso Vengoechea </p></center>
+      </footer>
+
+</body>
+</html>
